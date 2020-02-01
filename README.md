@@ -7,3 +7,19 @@ They have contracted an automobile consulting company to understand the factors 
 The company wants to know:
 1. Which variables are significant in predicting the price of a car
 2. How well those variables describe the price of a car
+
+# Business Goal 
+
+You are required to model the price of cars with the available independent variables. It will be used by the management to understand how exactly the prices vary with the independent variables. They can accordingly manipulate the design of the cars, the business strategy etc. to meet certain price levels. Further, the model will be a good way for management to understand the pricing dynamics of a new market. 
+
+# Data Preparation
+
+There is a variable named CarName which is comprised of two parts - the first word is the name of 'car company' and the second is the 'car model'. For example, chevrolet impala has 'chevrolet' as the car company name and 'impala' as the car model name. You need to consider only company name as the independent variable for model building. 
+
+# Model Evaluation:
+
+When we're done with model building and residual analysis, and have made predictions on the test set, just make sure you use the following two lines of code to calculate the R-squared score on the test set.
+``` java
+from sklearn.metrics import r2_score
+r2_score(y_test, y_pred)
+```
